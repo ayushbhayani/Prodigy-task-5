@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Scraper</title>
+</head>
+<body>
+  <h2>Scrape Books to CSV</h2>
+  <form action="/scrape" method="post">
+    <button type="submit">Scrape Now</button>
+  </form>
+  {% if csv_ready %}
+    <p><a href="/download">Download CSV</a></p>
+  {% endif %}
+</body>
+</html>
